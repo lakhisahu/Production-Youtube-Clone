@@ -7,7 +7,7 @@ const auth = require("./routes/auth")
 const path = require("path")
 const app = express()
 const corsOptions = {
-    origin: "https://youtube-clone-4rpc.onrender.com/", //included origin as true
+    origin: true, //included origin as true
     headers: ["Content-Type"],
     credentials: true, //included credentials as true
   };
