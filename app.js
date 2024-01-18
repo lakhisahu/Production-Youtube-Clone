@@ -7,7 +7,8 @@ const auth = require("./routes/auth")
 const path = require("path")
 const app = express()
 const corsOptions = {
-    origin: true, //included origin as true
+    origin: "https://slug-panel.onrender.com", //included origin as true
+    headers: ["Content-Type"],
     credentials: true, //included credentials as true
   };
 app.use(cors(corsOptions))
